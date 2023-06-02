@@ -32,8 +32,8 @@ public class MoviesServiceImplementation implements MoviesService{
 
 	@Override
 	public String addMovies(Movies movie) {
-		// TODO Auto-generated method stub
-		return null;
+		moviesrepo.save(movie);
+		return "Movie added sucessfully";
 	}
 
 	@Override
